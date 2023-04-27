@@ -37,8 +37,9 @@ body {
 .movies__container {
     padding-left: 50px;
     display: flex;
-    overflow-x: scroll;
-    overflow: hidden;
+    /*overflow-x:scroll ;*/
+  /*overflow-y: hidden;*/
+    /*overflow: hidden;*/
 }
 
 .original__movies::-webkit-scrollbar {

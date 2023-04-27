@@ -5,8 +5,12 @@
     <title> Clone</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
 </head>
 <body>
+
 <header>
     <div class="logo">
 
@@ -14,13 +18,13 @@
     </div>
     <div class="profile">
         <img src="img/favicon.ico"/>
-<!--        <h5>asdsadsadsad</h5>-->
+        <!--        <h5>asdsadsadsad</h5>-->
     </div>
 </header>
 
 <main>
-    <div class="featured">
-        <h2 class="title">Cinderella 2</h2>
+    <div class="featured_">
+        <h2 class="titleName">Cinderella 2</h2>
         <div class="featured__buttons">
             <button class="button__play"><i class="fas fa-play"></i>Play</button>
             <button class="button__list">My list</button>
@@ -38,6 +42,10 @@
         </div>
         <div class="original__movies">
             <!-- Movies List -->
+            <img src="img/slide-img7.jpg" alt="">
+            <img src="img/slide-img5.jpg">
+            <img src="img/slide-img3.jpg">
+            <img src="img/slide-img1.jpg">
             <img src="img/slide-img7.jpg">
             <img src="img/slide-img5.jpg">
             <img src="img/slide-img3.jpg">
@@ -52,6 +60,14 @@
         <div id="wishlist" class="movies__container">
             <!-- Movies List -->
             <img src="img/slide-img1.jpg">
+            <img src="img/slide-img7.jpg">
+            <img src="img/slide-img5.jpg">
+            <img src="img/slide-img3.jpg">
+            <img src="img/slide-img1.jpg">
+            <img src="img/slide-img7.jpg">
+            <img src="img/slide-img5.jpg">
+            <img src="img/slide-img3.jpg">
+            <img src="img/slide-img1.jpg">
         </div>
         <div class="movies__header">
             <h2>Trending Now</h2>
@@ -59,6 +75,14 @@
         <div id="trending" class="movies__container">
             <!-- Movies List -->
             <img src="img/slide-img4.jpg">
+            <img src="img/slide-img7.jpg">
+            <img src="img/slide-img5.jpg">
+            <img src="img/slide-img3.jpg">
+            <img src="img/slide-img1.jpg">
+            <img src="img/slide-img7.jpg">
+            <img src="img/slide-img5.jpg">
+            <img src="img/slide-img3.jpg">
+            <img src="img/slide-img1.jpg">
         </div>
 
         <div class="movies__header">
@@ -67,11 +91,46 @@
         <div id="top_rated" class="movies__container">
             <!-- Movies List -->
             <img src="img/slide-img2.jpg">
+            <img src="img/slide-img7.jpg">
+            <img src="img/slide-img5.jpg">
+            <img src="img/slide-img3.jpg">
+            <img src="img/slide-img1.jpg">
+            <img src="img/slide-img7.jpg">
+            <img src="img/slide-img5.jpg">
+            <img src="img/slide-img3.jpg">
+            <img src="img/slide-img1.jpg">
         </div>
 
     </div>
 
 </main>
+<!-- Modal -->
+
+<div id="trailerModal" tabindex="-1" role="dialog" aria-hidden="true">
+
+
+    <div class="modal-dialog bg-warning modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body bg-light-subtle">
+                <span class="movieNotFound">Trailer Not Found</span>
+                <iframe id="movieTrailer" height="400" src=""
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+                <p>Modal body text goes here.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
 
 </body>
 </html>

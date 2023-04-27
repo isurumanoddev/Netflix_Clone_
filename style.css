@@ -1,7 +1,7 @@
 body {
-    background-color: #111;
+    background-color: #111 !important;
     /*background-color: #726f6f;*/
-    color: white;
+    color: white !important;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
 }
@@ -33,27 +33,27 @@ header {
     width: 30px;
 }
 
-.featured {
+.featured_ {
     height: 400px;
     position: relative;
 
     background-image: url('https://image.tmdb.org/t/p/original//3lBDg3i6nn5R2NKFCJ6oKyUo2j5.jpg');
     background-position: center;
     background-size: cover;
-    padding: 0 0 0 30px;
+    padding: 50px 0 0 30px !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.featured .title {
-    font-size: 50px;
-    margin-bottom: 20px;
+.featured_ .titleName {
+    font-size: 50px !important;
+    margin-bottom: 20px !important;
     z-index:10 ;
 }
 
-.featured::after {
+.featured_::after {
     content: "";
-    position: absolute;
+    position: absolute !important;
     bottom: 0;
     left: 0;
     right: 0;
@@ -65,11 +65,11 @@ header {
             #111);
 
 }
-.featured .featured__buttons {
+.featured_ .featured__buttons {
     z-index: 10;
 
 }
-.featured .featured__buttons button {
+.featured_ .featured__buttons button {
 
     font-size: 16px;
     font-weight: bold;
@@ -82,7 +82,7 @@ header {
      margin: 0 3px;
 
 }
-.featured::before {
+.featured_::before {
     content: '';
     position: absolute;
     top: 0;
@@ -91,7 +91,7 @@ header {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
 }
-.featured .featured__buttons .button__play {
+.featured_ .featured__buttons .button__play {
 
 
     color: black;
@@ -113,8 +113,41 @@ header {
 .netflixOriginals h2,.movies__header h2 {
     padding-left: 30px;
 }
+.original__movies {
+    padding: 20px 0;
+}
 
 .original__movies,.movies__container {
     padding-left: 50px;
     display: flex;
+    /*overflow-x: scroll;*/
+    /*overflow-y: hidden;*/
+}
+.original__movies::-webkit-scrollbar {
+    /*display: none;*/
+}
+.original__movies img , .movies__container img {
+    margin-right: 10px;
+    height: 250px;
+    width: auto;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+
+.original__movies img:hover,
+.movies__container img:hover {
+    transform: scale(1.15);
+}
+.modal-body iframe {
+    width: 100%;
+}
+
+.modal-body span {
+    width: 100%;
+    display: flex;
+    color: #333;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
 }
